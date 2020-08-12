@@ -9,7 +9,6 @@ class HelpprElement1 extends LitElement {
     render() {
 
         return html`
-        <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all">
 <style>
 
 :host{
