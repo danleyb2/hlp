@@ -19,6 +19,7 @@ class HelpprElement4 extends LitElement {
 
 .popuptext {
     width: 300px;
+    position:relative;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -31,6 +32,17 @@ class HelpprElement4 extends LitElement {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+.popuptext:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #888888;
+    position: absolute;
+    top: 0px;
+    border-radius: 0px;
+    left: 94%;
+    transform: translateX(-10%) rotate(0deg);
 }
 
 .progress{

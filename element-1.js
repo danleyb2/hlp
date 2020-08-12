@@ -21,6 +21,7 @@ class HelpprElement1 extends LitElement {
 
 .popuptext {
     width: 300px;
+    position:relative;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -33,6 +34,18 @@ class HelpprElement1 extends LitElement {
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+
+.popuptext:before{
+    content: '';
+    width: 30px;
+    height: 30px;
+    background: #888888;
+    position: absolute;
+    bottom: -10px;
+    border-radius: 2px;
+    left: 45%;
+    transform: translateX(-10%) rotate(135deg);
 }
 
 p {
@@ -52,6 +65,12 @@ i {
 
 .popup{
     padding-bottom: 10px;
+}
+
+.fa-thumbs-down{
+    transform: rotateX(360deg) rotateY(180deg);
+    padding-right: 0;
+    padding-left: 5px;
 }
 
 </style>

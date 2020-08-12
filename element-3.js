@@ -18,6 +18,7 @@ class HelpprElement3 extends LitElement {
 
 .error{
     width: 300px;
+    position: relative;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 10px;
@@ -31,9 +32,21 @@ class HelpprElement3 extends LitElement {
     display: flex;
     flex-direction: column;
 }
+.error:before{
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: #f96e71;
+    position: absolute;
+    top: 0px;
+    border-radius: 0px;
+    left: 94%;
+    transform: translateX(-10%) rotate(0deg);
+}
 
 .error > p {
     white-space: pre-line;
+    text-align:center;
 }
 
 
